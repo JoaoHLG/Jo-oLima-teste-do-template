@@ -9,9 +9,9 @@ jobs:
       - name: checkout
         uses: actions/checkout@v5
       - name: log o nome do repositório 
-        run:  ${{ github.repository}}
+        run: echo  ${{ github.repository}}
       - name: log o nome do usuário
-        run:  ${{ github.actor}}
+        run: echo ${{ github.actor}}
       - name: Verificação do README.md
         id: check_files
         uses: andstor/file-existence-action@v3
